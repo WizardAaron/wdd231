@@ -1,0 +1,47 @@
+@media only screen and (min-width: 38rem) {
+    header, main, nav, footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    
+    header {
+        text-align: left;
+        grid-template-columns: 32px auto;
+    }
+    
+    header h1 {
+        font-family: var(--heading-font);
+        font-size: 2rem;
+        margin: 0.5rem 0;
+        padding: 0.5rem 0.5rem 0.5rem 3rem;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        background-color: var(--accent-p-color);
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        gap: 0rem;
+    }
+    
+    .navigation a {
+        display: block;
+        color: var(--text-white-color);
+        text-align: center;
+        text-decoration: none;
+        padding: 1rem;
+        border-right: var(--border1);
+        border-left: var(--border1)
+    }
+
+}
