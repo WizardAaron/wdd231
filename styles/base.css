@@ -18,6 +18,7 @@
 }
 
 /****************************** SITE WIDE STYLES ******************************/
+
 * {
 	margin: 0;
 	padding: 0;
@@ -26,6 +27,7 @@
 }
 
 /*********************************** HEADER ***********************************/
+
 header {
     background-color: var(--primary-color);
     color: var(--text-white-color);

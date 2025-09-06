@@ -3,7 +3,9 @@
         max-width: 900px;
         margin: 0 auto;
     }
-    
+
+
+
     header {
         text-align: left;
         grid-template-columns: 32px auto;
@@ -46,6 +48,7 @@
 
     main {
         display: grid;
+        min-height: 80vh;
         grid-template-columns: repeat(3, 1fr);
     }
 
