@@ -12,6 +12,8 @@
 
     <!-- Scripts -->
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +24,7 @@
 <body>
     <header>
         <img src="images/index-page-icon.svg" alt="Site Logo" width="512" height="512">
-        <h1>Ethan's WDD231 Homepage</h1>
+        <h1><span>Ethan's WDD231 Homepage</span></h1>
         <button id="ham-menu" class="hamburger"></button>
     </header>
     <nav id="nav-bar" class="navigation">
@@ -42,9 +44,20 @@
             <h2>Student Photo</h2>
             <img src="images/ethan-long-photo.jpg" alt="Photo of Ethan Long">
         </section>
-        <section id ="web-certificate-courses">
+        <section id="web-certificate-courses">
             <h2>Web Certificate Courses</h2>
-            <p>This is the web certificate courses section.</p>
+            <div class="course-filters">
+                <button type="button" data-filter="all">All</button>
+                <button type="button" data-filter="cse">CSE</button>
+                <button type="button" data-filter="wdd">WDD</button>
+            </div>
+            <div class="course-list">
+                <div class="course-item cse">CSE 111</div>
+                <div class="course-item cse">CSE 210</div>
+                <div class="course-item wdd">WDD 130</div>
+                <div class="course-item wdd">WDD 230</div>
+                <div class="course-item wdd">WDD 231</div>
+            </div>
         </section>
     </main>
     <footer>

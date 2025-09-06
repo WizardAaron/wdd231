@@ -1,4 +1,4 @@
-@media only screen and (min-width: 38rem) {
+@media only screen and (min-width: 40.3rem) {
     header, main, nav, footer {
         max-width: 900px;
         margin: 0 auto;
@@ -44,4 +44,52 @@
         border-left: var(--border1)
     }
 
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    main h1 {
+        grid-column: span 3;
+        margin: 0;
+    }
+
+    main section:nth-of-type(1) {
+        grid-column: span 2;
+        margin-right: 1rem;
+    }
+
+    main section:nth-of-type(2) {
+        grid-column: span 1;
+    }
+
+    main section:nth-of-type(3) {
+        grid-column: span 3;
+    }
+
+    main section img {
+        max-width: 88%;
+        height: auto;
+        display: block;
+        margin: 1rem auto;
+        border: var(--border1);
+        border-radius: var(--border-radius-half);
+    }
+
+    #web-certificate-courses {
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
+
+    .course-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5rem;
+        padding: 1rem;
+    }
+
+    .course-filters button {
+        font-weight: bold;
+        padding: 0.5rem 2rem;
+    }
 }
