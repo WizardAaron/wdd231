@@ -1,0 +1,77 @@
+:root{
+    --max-width: 1000px;
+    --primary-color: #0077B6;
+    --secondary-color: #ecd799;
+    --accent-p-color: #0e628f;
+    --accent-s-color: #F4EBD0;
+    --text-font: "Merriweather", serif;
+    --heading-font: "Roboto Slab", serif;
+    --text-black-color: #000000;
+    --text-white-color: #ffffff;
+    --border1: 1px solid #000000;
+    --border2: 1.5px solid #000000;
+    --border3: 1px solid #ffffff;
+    --border4: 1.5px solid #ffffff;
+    --border-radius-half: 0.5rem;
+	--border-radius: 1rem;
+    --border-radius2: 2rem;
+}
+
+/****************************** SITE WIDE STYLES ******************************/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: var(--text-font);
+}
+
+/*********************************** HEADER ***********************************/
+
+header {
+    background-color: var(--primary-color);
+    color: var(--text-white-color);
+    padding: 1rem;
+    display: flex;
+    justify-content: center; /* center horizontally */
+    align-items: center;     /* center vertically */
+    border-bottom: var(--border1);
+}
+
+h1 {
+    font-family: var(--heading-font);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+
+}
+
+#cards {
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin: 0.5rem;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+#cards section {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+#cards section h2 {
+  font-size: 1.2rem;
+  color: #333;
+  padding-bottom: 0.5rem;
+  border-bottom: var(--border2);
+  margin-bottom: 0.5rem;
+}
+
+#cards section img {
+  padding-top: 0.5rem;
+  display: block;
+  margin: 0 auto;
+}
