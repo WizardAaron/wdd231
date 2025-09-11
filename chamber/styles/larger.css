@@ -1,0 +1,101 @@
+@media only screen and (min-width: 40.3rem) {
+    header, main, nav, footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    body {
+        background-color: #000;
+    }
+
+    header {
+        text-align: left;
+        grid-template-columns: 32px auto;
+    }
+    
+    header h1 {
+        font-family: var(--heading-font);
+        font-size: 2rem;
+        margin: 0.5rem 0;
+        padding: 0.5rem 0.5rem 0.5rem 3rem;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        background-color: var(--accent-p-color);
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        gap: 0rem;
+    }
+    
+    .navigation a {
+        display: block;
+        color: var(--text-white-color);
+        text-align: center;
+        text-decoration: none;
+        padding: 1rem;
+        border-right: var(--border1);
+        border-left: var(--border1)
+    }
+
+    main {
+        display: grid;
+
+        grid-template-columns: repeat(24, 1fr);
+    }
+
+    main h1 {
+        grid-column: span 24;
+        margin: 0;
+    }
+
+    main section:nth-of-type(1) {
+        grid-column: span 12;
+        margin-right: 1rem;
+    }
+
+    main section:nth-of-type(2) {
+        grid-column: span 6;
+        margin-right: 0.5rem;
+    }
+
+    main section:nth-of-type(3) {
+        grid-column: span 6;
+        margin-left: 0.5rem;
+    }
+
+    main section:nth-of-type(4) {
+        grid-column: span 8;
+        margin-right: 0.5rem;
+    }
+
+    main section:nth-of-type(5) {
+        grid-column: span 8;
+        margin-right: 0.5rem;
+    }
+
+    main section:nth-of-type(6) {
+        grid-column: span 8;
+        margin-right: 0.5rem;
+    }
+
+    main section img {
+        max-width: 88%;
+        height: auto;
+        display: block;
+        margin: 1rem auto;
+        border: var(--border1);
+        border-radius: var(--border-radius-half);
+    }
+
+}
