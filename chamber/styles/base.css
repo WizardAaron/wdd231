@@ -141,6 +141,19 @@ footer {
     font-size: 0.9rem;
 }
 
+footer p {
+    margin: 0.3rem 0;
+}
+
+footer img {
+    width: 50px;
+    height: auto;
+}
+
+footer .social {
+    margin: 0.75rem 0 0.75rem 0;
+}
+
 .social {
     display: flex;
     justify-content: center;
@@ -183,6 +196,39 @@ main h1 {
     text-align: left;
 }
 
+.directory-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+/* Keep h1 styling consistent */
+.directory-header h1 {
+  margin: 0;
+}
+
+/* Style the toggle buttons */
+.view-toggle {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.view-toggle button {
+  padding: 0.4rem 0.8rem;
+  border: var(--border1);
+  border-radius: var(--border-radius-half);
+  background-color: var(--accent-p-color);
+  color: var(--text-white-color);
+  cursor: pointer;
+  font-family: var(--heading-font);
+}
+
+.view-toggle button:hover {
+  background-color: var(--accent-s-color);
+  color: var(--text-black-color);
+}
+
 main section {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -215,3 +261,110 @@ main section img {
     border-radius: var(--border-radius-half);
 }
 
+/******************************* CARDS *******************************/
+
+#company-cards-section {
+    margin: 0;
+    margin-top: 1rem;
+    padding: 0.5rem;
+}
+/* Grid View */
+#cards.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+/* Individual Card Styling */
+#cards section {
+  border: 1px solid #ccc;
+  padding: 0rem 0rem 1rem 0rem;
+  border-radius: 0.5rem;
+  background-color: #fafafa;
+  margin: 0rem;
+}
+#cards section h2 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+#cards img {
+  display: block;
+  margin: 0.5rem auto;
+}
+#cards p {
+  margin: 0;
+  padding: 0.2rem 1rem;
+}
+#cards a {
+    text-decoration:none;
+    color: var(--primary-color);
+    margin: 0.5rem 1rem;
+}
+
+/* =========================
+   LIST VIEW
+   ========================= */
+#cards.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* Each company entry in list view */
+#cards.list section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0rem 0rem 1rem 0rem;
+  line-height: 1.4;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0;
+  margin: 0px;
+}
+
+/* Zebra striping effect */
+#cards.list section:nth-child(odd) {
+  background-color: #ffffff; /* white */
+}
+
+#cards.list section:nth-child(even) {
+  background-color: #e7e7e7; /* light gray */
+}
+
+/* Company name styling */
+#cards.list h2 {
+  font-family: var(--heading-font);
+  font-size: 1.2rem;
+  padding: 1rem 0rem 0.4rem 1rem;
+  margin: 0rem 0rem 0rem 0rem;
+  color: var(--text-black-color);
+  background-color: transparent;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom: none;
+}
+
+/* Contact info spacing */
+#cards.list p {
+  margin: 0.2rem 0;
+  font-size: 0.95rem;
+  color: var(--text-black-color);
+}
+
+/* Website link styling */
+#cards.list a {
+  color: var(--accent-p-color);
+  text-decoration: none;
+  margin: 0.35rem 0rem 0rem 1rem;
+}
+
+#cards.list a:hover {
+  text-decoration: underline;
+}
+
+/* Hide images in list view for a cleaner text directory look */
+#cards.list img {
+  display: none;
+}

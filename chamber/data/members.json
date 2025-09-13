@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Blue Horizon Consulting",
+    "address": "4821 Maplewood Ave, San Diego, CA 92103",
+    "phone": "+1 (6199) 555-1842",
+    "website": "https://pokemondb.net/pokedex/eevee",
+    "image": "images/BHC-logo.jpg",
+    "membership_level": 3
+  },
+  {
+    "name": "Evergreen Tech Solutions",
+    "address": "2150 Pinecrest Blvd, San Diego, CA 92105",
+    "phone": "+1 (6199) 555-9274",
+    "website": "https://pokemondb.net/pokedex/eevee",
+    "image": "images/ETS-logo.jpg",
+    "membership_level": 2
+  },
+  {
+    "name": "Golden Gate Marketing",
+    "address": "901 Lombard St, San Diego, CA 92107",
+    "phone": "+1 (6199) 555-6721",
+    "website": "https://pokemondb.net/pokedex/eevee",
+    "image": "images/GGM-logo.jpg",
+    "membership_level": 3
+  },
+  {
+    "name": "Summit Peak Adventures",
+    "address": "77 Alpine Rd, San Diego, CA 92109",
+    "phone": "+1 (6199) 555-4810",
+    "website": "https://pokemondb.net/pokedex/eevee",
+    "image": "images/SPA-logo.jpg",
+    "membership_level": 1
+  },
+  {
+    "name": "Urban Harvest Organics",
+    "address": "142 Greenway Dr, San Diego, CA 92110",
+    "phone": "+1 (6199) 555-9034",
+    "website": "https://pokemondb.net/pokedex/eevee",
+    "image": "images/UHO-logo.jpg",
+    "membership_level": 2
+  },
+  {
+    "name": "Silverline Financial Group",
+    "address": "560 Madison Ave, San Diego, CA 92111",
+    "phone": "+1 (6199) 555-7789",
+    "website": "https://pokemondb.net/pokedex/eevee",
+    "image": "images/SFG-logo.jpg",
+    "membership_level": 3
+  },
+  {
+    "name": "Coastal Breeze Interiors",
+    "address": "88 Seaside Ln, San Diego, CA 92113",
+    "phone": "+1 (6199) 555-2165",
+    "website": "https://pokemondb.net/pokedex/eevee",
+    "image": "images/CBI-logo.jpg",
+    "membership_level": 1
+  }
+]
