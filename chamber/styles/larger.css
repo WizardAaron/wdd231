@@ -1,11 +1,10 @@
 @media only screen and (min-width: 40.3rem) {
     header, main, nav, footer {
-        max-width: 900px;
         margin: 0 auto;
     }
 
     body {
-        background-color: #000;
+        background-color: #ecd799;
     }
 
     header {
