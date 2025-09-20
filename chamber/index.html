@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="San Diego Chamber of Commerce home page. Discover local businesses, connect, and foster economic growth in San Diego.">
     <title>San Diego Chamber of Commerce</title>
 
     <!-- Facebook Meta Tags -->
@@ -19,7 +20,9 @@
     <!-- Scripts -->
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    
+    <script src="scripts/weather-api.js" defer></script>
+    <script src="scripts/card-creator-spotlight.js" type="module"></script>
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,11 +35,11 @@
     <header>
         <img src="images/sd-coc-logo.svg" alt="Site Logo" width="512" height="512">
         <h1><span>San Diego Chamber of Commerce</span></h1>
-        <button id="ham-menu" class="hamburger"></button>
+        <button id="ham-menu" class="hamburger" title="Open navigation menu" aria-label="Open navigation menu"></button>
     </header>
     <nav id="nav-bar" class="navigation">
         <ul>
-            <li class="current"><a href="home.html">Home</a></li>
+            <li class="current"><a href="index.html">Home</a></li>
             <li><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
             <li><a href="discover.html">Discover</a></li>
@@ -48,21 +51,41 @@
             <h2>Events</h2>
             <p>No upcoming events at this time.</p>
         </section>
-        <section id="current-weather">
+        <section class="weather-card">
             <h2>Current Weather</h2>
-            <img src="images/sunny-icon.svg" alt="Sunny" width="64" height="64">
-            <img src="images/partly-cloudy-icon.svg" alt="Partly Cloudy" width="64" height="64">
-            <img src="images/cloudy-icon.svg" alt="Cloudy" width="64" height="64">
-            <img src="images/rainy-icon.svg" alt="Rainy" width="64" height="64">
-            <p>(Fill with javascript current weather info)</p>
+            <p><span id="current-temp"></span></p>
+            <figure>
+                <img id="weather-icon" src="" alt="">
+                <figcaption></figcaption>
+            </figure>
+            <div id="weather-details">
+                <p>High: <span id="max-temp"></span></p>
+                <p>Low: <span id="min-temp"></span></p>
+                <p>Humidity: <span id="humidity"></span></p>
+                <p>Sunrise: <span id="sunrise"></span></p>
+                <p>Sunset: <span id="sunset"></span></p>
+            </div>
         </section>
         <section id="weather-forecast">
-            <h2>Weather Forecast</h2>
-            <p>(Fill with javascript weather forecast temperature fahrenheit info for current day and next 2 days)</p>
+            <h2>3-Day Weather Forecast</h2>
+            <div id="three-day-forecast">
+                <div class="forecast-day">
+                    <h3>Today (<span id="day1-date"></span>): </h3>
+                    <p>High: <span id="day1-max-temp"></span></p>
+                    <p>Low: <span id="day1-min-temp"></span></p>
+                    <h3><span id="day2-name">: </span></h3>
+                    <p>High: <span id="day2-max-temp"></span></p>
+                    <p>Low: <span id="day2-min-temp"></span></p>
+                    <h3><span id="day3-name">: </span></h3>
+                    <p>High: <span id="day3-max-temp"></span></p>
+                    <p>Low: <span id="day3-min-temp"></span></p>
+                </div>
+            </div>
         </section>
-        <section id="business-cards">
-            <h2>Business Directory</h2>
-            <p>(Fill with javascript business cards)</p>
+        <section id="company-cards-spotlight">
+            <h2 class="visually-hidden">Company Directory</h2>
+            <div id="cards" class="grid"></div>
+        </section>
     </main>
     <footer>
         <div class="footer-left">

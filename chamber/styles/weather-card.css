@@ -1,0 +1,28 @@
+.weather-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 20px auto;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.weather-card h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.weather-card p {
+    margin: 12px 0;
+    line-height: 1.5;
+}
+
+.weather-card #current-temp {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #007BFF;
+}
