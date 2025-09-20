@@ -12,7 +12,7 @@
         grid-template-columns: 32px auto;
     }
     
-    header h1 {
+    header p {
         font-family: var(--heading-font);
         font-size: 2rem;
         margin: 0.5rem 0;

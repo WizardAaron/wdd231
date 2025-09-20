@@ -59,9 +59,10 @@ header img {
     padding: 5px 0 5px 5px;
 }
 
-header h1 {
+header p {
     font-family: var(--heading-font);
     font-size: 1.5rem;
+    font-weight: bold;
     margin: 0.5rem 0;
     padding: 0.3rem 0.3rem 0.3rem 1.1rem;
 }
