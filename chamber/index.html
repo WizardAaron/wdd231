@@ -7,10 +7,10 @@
     <title>San Diego Chamber of Commerce</title>
 
     <!-- Facebook Meta Tags -->
-    <meta property="facebook:title" content="San Diego Chamber of Commerce" />
-    <meta property="facebook:description" content="Connecting businesses and fostering economic growth in San Diego." />
-    <meta property="facebook:image" content="images/favicon.ico" />
-    <meta property="facebook:url" content="https://WizardAaron.github.io/wdd231/chamber/directory.html" />
+    <meta property="facebook:title" content="San Diego Chamber of Commerce">
+    <meta property="facebook:description" content="Connecting businesses and fostering economic growth in San Diego.">
+    <meta property="facebook:image" content="images/favicon.ico">
+    <meta property="facebook:url" content="https://WizardAaron.github.io/wdd231/chamber/directory.html">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/normalize.css">
@@ -45,6 +45,16 @@
             <li><a href="discover.html">Discover</a></li>
         </ul>
     </nav>
+    <section class="hero">
+        <h2 class="visually-hidden">Welcome to the San Diego Chamber of Commerce</h2>
+        <picture>
+            <source srcset="images/hero-image-desktop-sd.jpeg" media="(min-width: 768px)">
+            <img src="images/hero-image-mobile-sd.jpeg" alt="San Diego Chamber Hero Image">
+        </picture>
+        <div class="hero-button">
+            <a href="#" class="cta-button">Keynote Tickets</a>
+        </div>
+    </section>
     <main>
         <h1>Home</h1>
         <section id="events">
@@ -55,7 +65,7 @@
             <h2>Current Weather</h2>
             <p><span id="current-temp"></span></p>
             <figure>
-                <img id="weather-icon" src="" alt="">
+                <img id="weather-icon" src="images/grid-icon" alt="Weather icon">
                 <figcaption></figcaption>
             </figure>
             <div id="weather-details">

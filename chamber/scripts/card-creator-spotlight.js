@@ -27,8 +27,25 @@ function displayMembers(members) {
   members.forEach(member => {
     const card = document.createElement('section');
 
-    const name = document.createElement('h2');
-    name.textContent = member.name;
+  const name = document.createElement('h2');
+  name.classList.add('card-title');
+    
+  // Create the membership badge
+  const badge = document.createElement('img');
+  badge.classList.add('member-badge');
+  badge.alt = `${member.membership_level === 3 ? 'Gold' : 'Silver'} Tier Badge`;
+  badge.src = member.membership_level === 3
+    ? 'images/gold-tier-sdcoc.svg'
+    : 'images/silver-tier-sdcoc.svg';
+    
+  // Create a span for the company name
+  const nameText = document.createElement('span');
+  nameText.textContent = member.name;
+    
+  // Append badge and name to the h2
+  name.appendChild(badge);
+  name.appendChild(nameText); 
+ // Insert badge inside h2 before the text
 
     const wrapper = document.createElement('div');
     wrapper.classList.add('card-content-wrapper');
@@ -58,6 +75,7 @@ function displayMembers(members) {
     cardsContainer.appendChild(card);
   });
 }
+
 
 
 getMemberData();

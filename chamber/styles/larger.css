@@ -239,4 +239,16 @@ body.home main {
 #cards.list img {
   display: none;
 }
+
+/********************* HERO IMAGE DESKTOP *********************/
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  max-height: 500px; /* Optional: limit height for desktop */
+  object-fit: cover; /* Optional: crop nicely */
+}
+
 }
