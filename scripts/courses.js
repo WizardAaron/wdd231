@@ -115,7 +115,6 @@ const courses = [
     certificate: 'Web Development Certificate',
     technology: ['HTML', 'CSS', 'JavaScript']
   }
-  // Add more course objects as needed
 ];
 
 function displayCourseDetails(course) {
