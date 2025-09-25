@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ethan Long">
     <title>Ethan's WDD231 Homepage</title>
 
     <!-- Facebook Meta Tags -->
-    <meta property="facebook:title" content="WDD 231: Web Frontend Development" />
-    <meta property="facebook:description" content="Exploring the fundamentals of web frontend development with hands-on projects and engaging lessons." />
-    <meta property="facebook:image" content="images/favicon.ico" />
-    <meta property="facebook:url" content="https://WizardAaron.github.io/wdd231/index.html" />
+    <meta property="facebook:title" content="WDD 231: Web Frontend Development">
+    <meta property="facebook:description" content="Exploring the fundamentals of web frontend development with hands-on projects and engaging lessons.">
+    <meta property="facebook:image" content="images/favicon.ico">
+    <meta property="facebook:url" content="https://WizardAaron.github.io/wdd231/index.html">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/normalize.css">
@@ -33,12 +34,12 @@
     <header>
         <img src="images/index-page-icon.svg" alt="Site Logo" width="512" height="512">
         <h1><span>Ethan's WDD231 Homepage</span></h1>
-        <button id="ham-menu" class="hamburger"></button>
+        <button id="ham-menu" class="hamburger" title="Open navigation menu" aria-label="Open navigation menu"></button>
     </header>
     <nav id="nav-bar" class="navigation">
         <ul>
-            <li class="current"><a href="#home">Home</a></li>
-            <li><a href="#chamber">Chamber of Commerce</a></li>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a target="_blank" href="https://wizardaaron.github.io/wdd231/chamber">Chamber of Commerce</a></li>
             <li><a href="#final">Final</a></li>
         </ul>
     </nav>
@@ -62,10 +63,12 @@
             <div class="course-list">
                 <div class="course-item cse">CSE 111</div>
                 <div class="course-item cse">CSE 210</div>
+                <div class="course-item cse">CSEPC 110</div>
                 <div class="course-item wdd">WDD 130</div>
-                <div class="course-item wdd">WDD 230</div>
+                <div class="course-item wdd">WDD 131</div>
                 <div class="course-item wdd">WDD 231</div>
             </div>
+            <p id="credit-counter"><strong>Total Credits:</strong> 0</p>
         </section>
     </main>
     <footer>
@@ -82,5 +85,6 @@
             Last Modification: <span id="short"></span>
         </p>
     </footer>
+    <dialog id="course-details"></dialog>
 </body>
 </html>

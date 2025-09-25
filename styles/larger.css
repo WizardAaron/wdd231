@@ -1,12 +1,13 @@
 @media only screen and (min-width: 40.3rem) {
     header, main, nav, footer {
-        max-width: 900px;
         margin: 0 auto;
     }
 
     body {
         background-color: #000;
     }
+
+    /****************************** HEADER ******************************/
 
     header {
         text-align: left;
@@ -20,9 +21,13 @@
         padding: 0.5rem 0.5rem 0.5rem 3rem;
     }
 
+    /************************* HAMBURGER BUTTON *************************/
+
     .hamburger {
         display: none;
     }
+
+    /************************ HEADING NAVIGATION ************************/
 
     .navigation {
         display: block;
@@ -47,6 +52,8 @@
         border-right: var(--border1);
         border-left: var(--border1)
     }
+
+    /******************************* MAIN *******************************/
 
     main {
         display: grid;
@@ -81,6 +88,8 @@
         border-radius: var(--border-radius-half);
     }
 
+    /******************* COURSE DISPLAY & INFORMATION *******************/
+
     #web-certificate-courses {
         margin-top: 0rem;
         margin-bottom: 0rem;
@@ -96,5 +105,11 @@
     .course-filters button {
         font-weight: bold;
         padding: 0.5rem 2rem;
+    }
+
+    dialog#course-details h3 {
+    padding: 0.5rem 0.1rem 0.5rem 1rem;
+    font-style: italic;
+    font-size: 1.5rem;
     }
 }
