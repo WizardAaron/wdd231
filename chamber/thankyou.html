@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Thank you for joining the San Diego Chamber of Commerce!">
+  <meta name="author" content="Ethan Long">
+  <title>Thank You: San Diego Chamber of Commerce</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <!-- Scripts -->
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/form-display.js" defer></script>
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/coc-favicon.ico">
+
+  <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <img src="images/sd-coc-logo.svg" alt="Site Logo" width="512" height="512">
+    <p><span>San Diego Chamber of Commerce</span></p>
+    <button id="ham-menu" class="hamburger" title="Open navigation menu" aria-label="Open navigation menu"></button>
+  </header>
+
+  <nav id="nav-bar" class="navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="join.html">Join</a></li>
+      <li><a href="discover.html">Discover</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Thank You for Joining!</h1>
+    <p>We appreciate your interest in becoming a member of the San Diego Chamber of Commerce.</p>
+
+    <section id="confirmation-details">
+      <h2>Your Submitted Information</h2>
+      <ul>
+        <li><strong>First Name:</strong> <span id="firstName"></span></li>
+        <li><strong>Last Name:</strong> <span id="lastName"></span></li>
+        <li><strong>Email:</strong> <span id="email"></span></li>
+        <li><strong>Mobile Phone:</strong> <span id="phone"></span></li>
+        <li><strong>Organization:</strong> <span id="organization"></span></li>
+        <li><strong>Submission Timestamp:</strong> <span id="timestamp"></span></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-left">
+      <p>San Diego Chamber of Commerce</p>
+      <p>123 Business Rd, San Diego, CA 92101</p>
+      <p>infococ@sandiegochamber.org</p>
+      <p>(6199) 123-4567</p>
+    </div>
+
+    <div class="footer-center">
+      <div class="social">
+        <a href="https://youtube.com" target="_blank"><img src="images/youtube-icon.svg" alt="YouTube"></a>
+        <a href="https://x.com" target="_blank"><img src="images/twitter-x-icon.svg" alt="Twitter / X"></a>
+        <a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin-icon.svg" alt="LinkedIn"></a>
+      </div>
+    </div>
+
+    <div class="footer-right">
+      <p>WDD 231 Class Project</p>
+      <p>Created by Ethan Long</p>
+      <p>&copy; <span id="year"></span> San Diego Chamber of Commerce</p>
+      <p id="lastModified">Last Modification: <span id="short"></span></p>
+    </div>
+  </footer>
+</body>
+</html>

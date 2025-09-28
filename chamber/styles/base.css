@@ -12,8 +12,9 @@
     --border2: 1.5px solid #000000;
     --border3: 1px solid #ffffff;
     --border4: 1.5px solid #ffffff;
+    --border-radius-quarter: 0.25rem;
     --border-radius-half: 0.5rem;
-	--border-radius: 1rem;
+	  --border-radius: 1rem;
     --border-radius2: 2rem;
 }
 
@@ -483,8 +484,8 @@ main section img {
 #company-cards-spotlight #cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem; /* Optional: adds spacing between cards */
-  justify-content: center; /* Optional: centers cards horizontally */
+  gap: 1rem; /* Adds spacing between cards */
+  justify-content: center; /* Centers cards horizontally */
 }
 
 /*
@@ -542,7 +543,7 @@ main section img {
   vertical-align: middle;
 }
 
-/******************* HERO IMAGE MOBILE *******************/
+/*************************** HERO IMAGE MOBILE ***************************/
 
 .hero img {
   width: 100%;
@@ -578,4 +579,164 @@ main section img {
 .cta-button:hover {
   background-color: var(--accent-s-color);
   color: var(--text-black-color);
+}
+
+/***************************** JOIN PAGE FORM *****************************/
+
+.join-form {
+  border: var(--border2);
+  border-radius: var(--border-radius);
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  margin: 2rem 0rem;
+  background-color: var(--accent-s-color);
+  padding: 1rem;
+  text-align: center;
+}
+
+.join-form h2 {
+  font-family: var(--heading-font);
+  padding-bottom: 0.75rem;
+}
+
+.join-form label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.join-form input,
+.join-form select,
+.join-form textarea {
+  display: block;
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.15rem;
+  border: var(--border1);
+  border-radius: var(--border-radius-quarter);
+}
+
+.join-form > input:last-of-type {
+  border: var(--border2);
+  border-radius: var(--border-radius2);
+  padding: 0.25rem;
+}
+
+.join-form > input:last-of-type:hover {
+  background-color: var(--primary-color);
+  cursor: pointer;
+}
+
+/***************************** JOIN PAGE CARDS *****************************/
+
+.membership-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem;
+  background-color: white;
+}
+
+@keyframes fadeInCards {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.membership-card {
+  border: var(--border2);
+  border-radius: var(--border-radius);
+  padding: 0rem;
+  background-color: var(--accent-s-color);
+  width: 250px;
+  text-align: center;
+  animation: fadeInCards 2s ease-in-out;
+}
+
+.membership-card h2 {
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+
+.membership-card a {
+  display: inline-block;
+  margin: 1.5rem;
+  color: var(--primary-color);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/***************************** JOIN PAGE MODALS ******************************/
+
+dialog.modal {
+  padding: 0rem;
+  border: none;
+  border-radius: var(--border-radius);
+  background-color: #e72020;
+  max-width: 500px;
+  width: 90%;
+  margin: auto;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+  background-color: var(--accent-s-color);
+  margin: 0rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 500px;
+  border-radius: var(--border-radius);
+}
+
+.modal-content h3 {
+  background-color: var(--accent-p-color);
+  color: var(--text-white-color);
+  padding: 1rem;
+
+}
+
+.modal-content ul {
+  padding: 0.3rem 0.3rem 0.3rem 1.5rem;
+}
+
+.close-modal {
+  float: right;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem 0.85rem;
+  margin: 0.25rem 0.25rem 0rem 0rem;
+  color: var(--text-white-color);
+  border: var(--border3);
+  border-radius: var(--border-radius2);
+}
+
+.close-modal:hover {
+  background-color: var(--primary-color);
+}
+
+/********************** THANK YOU CONFIRMATION DETAILS ***********************/
+
+#confirmation-details ul {
+  list-style: none;
+  padding: 0.5rem;
+}
+
+#confirmation-details ul li {
+  list-style: none;
+}
+
+#confirmation-details ul li:not(:first-of-type) {
+  padding-top: 0.25rem;
+}
+
+#confirmation-details ul li:not(:last-of-type) {
+  padding-bottom: 0.25rem;
 }

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="San Diego Chamber of Commerce home page. Discover local businesses, connect, and foster economic growth in San Diego.">
+    <meta name="author" content="Ethan Long">
+    <title>Join: San Diego Chamber of Commerce</title>
+
+    <!-- Open Graph Meta Tags for Social Sharing -->
+    <meta property="og:title" content="San Diego Chamber of Commerce Home">
+    <meta property="og:description" content="Explore San Diego&#8217;s thriving business and local community activities and discover opportunities for growth and connection.">
+    <meta property="og:image" content="https://wizardaaron.github.io/wdd231/chamber/images/sd-coc-logo.svg">
+    <meta property="og:url" content="https://wizardaaron.github.io/wdd231/chamber/">
+    <meta property="og:type" content="website">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="facebook:title" content="San Diego Chamber of Commerce">
+    <meta property="facebook:description" content="Connecting businesses and fostering economic growth in San Diego.">
+    <meta property="facebook:image" content="images/favicon.ico">
+    <meta property="facebook:url" content="https://WizardAaron.github.io/wdd231/chamber/directory.html">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- Scripts -->
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/membership-levels.js" defer></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+        const timestampField = document.getElementById("timestamp");
+        const now = new Date();
+        timestampField.value = now.toISOString(); // or use a custom format
+        });
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/coc-favicon.ico">
+</head>
+<body>
+  <header>
+    <img src="images/sd-coc-logo.svg" alt="Site Logo" width="512" height="512">
+    <p><span>San Diego Chamber of Commerce</span></p>
+    <button id="ham-menu" class="hamburger" title="Open navigation menu" aria-label="Open navigation menu"></button>
+  </header>
+
+  <nav id="nav-bar" class="navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li class="current"><a href="join.html">Join</a></li>
+      <li><a href="discover.html">Discover</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Join: San Diego Chamber of Commerce</h1>
+
+    <form method="get" class="join-form" action="thankyou.html">
+        <h2>Join the Chamber</h2>
+      <label title="First Name">
+        First Name:
+        <input type="text" name="firstName" required autocomplete="given-name" title="First Name">
+      </label>
+
+      <label title="Last Name">
+        Last Name:
+        <input type="text" name="lastName" required autocomplete="family-name" title="Last Name">
+      </label>
+
+      <label title="Organizational Title">
+        Organizational Title:
+        <input type="text" name="orgTitle" autocomplete="organization-title" title="Organizational Title" pattern="[A-Za-z\\-\\s]{4,}">
+      </label>
+
+      <label title="Email Address">
+        Email:
+        <input type="email" name="email" required autocomplete="email" title="Email Address" placeholder="example@domain.com">
+      </label>
+
+      <label title="Mobile Phone">
+        Mobile Phone:
+        <input type="tel" name="phone" required autocomplete="tel" title="Mobile Phone">
+      </label>
+
+      <label title="Organization Name">
+        Business/Organization Name:
+        <input type="text" name="organization" required autocomplete="organization" title="Organization Name">
+      </label>
+
+      <label title="Membership Level">
+        Membership Level:
+        <select name="membership" title="Membership Level">
+          <option value="NP">Non-Profit Membership (Free)</option>
+          <option value="Bronze">Bronze Membership</option>
+          <option value="Silver">Silver Membership</option>
+          <option value="Gold">Gold Membership</option>
+        </select>
+      </label>
+
+      <label title="Business Description">
+        Business Description:
+        <textarea name="description" title="Business Description"></textarea>
+      </label>
+
+      <input type="hidden" name="timestamp" id="timestamp">
+      <input type="submit" value="Submit Application">
+    </form>
+
+    <!-- Membership Cards Container -->
+    <section class="membership-cards"></section>
+  </main>
+
+  <footer>
+    <div class="footer-left">
+      <p>San Diego Chamber of Commerce</p>
+      <p>123 Business Rd, San Diego, CA 92101</p>
+      <p>infococ@sandiegochamber.org</p>
+      <p>(6199) 123-4567</p>
+    </div>
+
+    <div class="footer-center">
+      <div class="social">
+        <a href="https://youtube.com" target="_blank"><img src="images/youtube-icon.svg" alt="YouTube"></a>
+        <a href="https://x.com" target="_blank"><img src="images/twitter-x-icon.svg" alt="Twitter / X"></a>
+        <a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin-icon.svg" alt="LinkedIn"></a>
+      </div>
+    </div>
+
+    <div class="footer-right">
+      <p>WDD 231 Class Project</p>
+      <p>Created by Ethan Long</p>
+      <p>&copy; <span id="year"></span> San Diego Chamber of Commerce</p>
+      <p id="lastModified">Last Modification: <span id="short"></span></p>
+    </div>
+  </footer>
+</body>
+</html>
