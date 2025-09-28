@@ -133,13 +133,6 @@ body.home main {
         padding: 0.5rem;
     }
 
-    /* Grid View */
-    #cards.grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1rem;
-    }
-
     /* List View */
     #cards.list {
       display: flex;
