@@ -19,6 +19,13 @@
         padding: 0.5rem 0.5rem 0.5rem 3rem;
     }
 
+    header img {
+      display: block;
+      width: 200%;
+      height: auto;
+      padding: 5px 0 5px 5px;
+    }
+
     .hamburger {
         display: none;
     }
@@ -114,6 +121,7 @@ body.home main {
     body.home main h1 {
         grid-column: span 4;
         margin: 0;
+        padding-bottom: 1rem;
     }
 
     body.home main > section:nth-of-type(1) {
@@ -133,7 +141,22 @@ body.home main {
 
     body.home main > section:nth-of-type(4) {
         grid-column: span 4;
+        margin-right: 0rem;
+    }
+    .color-schema {
+        grid-column: span 1;
         margin-right: 0.5rem;
+    }
+
+    .typography {
+        grid-column: span 1;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .wireframe-section {
+        grid-column: span 2;
+        margin-left: 0.5rem;
     }
 
     #company-cards-section {
