@@ -4,7 +4,7 @@
     }
 
     body {
-        background-color: #ecd799;
+        background-color: var(--secondary-color);
     }
 
     header {

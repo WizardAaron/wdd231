@@ -794,3 +794,47 @@ dialog::backdrop {
   color: var(--accent-s-color);
   background-color: white;
 }
+
+/***************************** WIREFRAMES *****************************/
+
+.wireframe-section {
+  text-align: center;
+}
+
+.wireframe-section button {
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.wireframe-page-button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 2.5rem 2rem;
+  font-size: 2rem;
+  border: var(--border2);
+  border-radius: var(--border-radius2);
+  text-decoration: none;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.7);
+  margin: 1rem 1rem;
+}
+
+.wireframe-page-button:hover {
+  background-color: var(--accent-s-color);
+  color: var(--text-red-color);
+}
+
+.wireframes img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border: var(--border1);
+  border-radius: var(--border-radius-half);
+}
+
+.wireframes img{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
