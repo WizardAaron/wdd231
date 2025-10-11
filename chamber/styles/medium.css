@@ -1,0 +1,72 @@
+/*.discover-gallery {
+  padding: 1rem;
+}*/
+
+.grid-container {
+  display: grid;
+  gap: 1rem;
+  grid-template-areas:
+    "item1"
+    "item2"
+    "item3"
+    "item4"
+    "item5"
+    "item6"
+    "item7"
+    "item8";
+}
+
+.discover-card {
+  border: var(--border1);
+  border-radius: var(--border-radius);
+  padding: 0;
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.discover-card h2 {
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+
+.discover-card figure {
+  margin: 0;
+  padding: 0;
+}
+
+.discover-card img {
+  width: 100%;
+  margin: 0 0 1rem 0;
+  padding: 0;
+  height: auto;
+  display: block;
+  border-radius: 0;
+  border-bottom: 1px solid #ccc; /* optional: adds a clean divider */
+}
+
+
+@media (min-width: 641px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "item1 item2"
+      "item3 item4"
+      "item5 item6"
+      "item7 item8";
+  }
+
+  .discover-card img:hover {
+    filter: brightness(1.1);
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media (min-width: 1025px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "item1 item2 item3 item4"
+      "item5 item6 item7 item8";
+  }
+}
