@@ -4,55 +4,55 @@
     "address": "1549 El Prado, San Diego, CA 92101",
     "cost": "Free admission to park grounds; museum entry varies ($5-$20).",
     "description": "A cultural oasis with museums, gardens, and the San Diego Zoo.",
-    "image": "images/balboa-park.webp"
+    "image": "images/balboa-park.jpg"
   },
   {
     "name": "Gaslamp Quarter",
     "address": "614 Fifth Ave, San Diego, CA 92101",
     "cost": "Free to explore; dining and entertainment prices vary.",
     "description": "Historic district with nightlife, dining, and Victorian architecture.",
-    "image": "images/gaslamp-quarter.webp"
+    "image": "images/gaslamp-quarter.jpg"
   },
   {
     "name": "Sunset Cliffs Lookout",
     "address": "1250 Sunset Cliffs Blvd, San Diego, CA 92107",
     "cost": "Free public access.",
-    "description": "A breathtaking coastal viewpoint known for dramatic ocean vistas and golden hour photography.",
-    "image": "images/sunset-cliffs.webp"
+    "description": "A breathtaking coastal viewpoint known for golden hour photography.",
+    "image": "images/sunset-cliffs-lookout.jpg"
   },
   {
     "name": "Mission Bay Eco Center",
     "address": "2600 Bayside Walk, San Diego, CA 92109",
     "cost": "$10 suggested donation; some activities may have fees.",
-    "description": "An interactive hub for environmental education and water-based recreation in Mission Bay Park.",
-    "image": "images/mission-bay-eco.webp"
+    "description": "An interactive hub for environmental education and water-based recreation.",
+    "image": "images/mission-bay-eco-center.jpg"
   },
   {
     "name": "Old Town Artisan Market",
     "address": "4010 Twiggs St, San Diego, CA 92110",
     "cost": "Free entry; vendor prices vary.",
     "description": "A vibrant marketplace showcasing local crafts, food vendors, and cultural performances.",
-    "image": "images/old-town-market.webp"
+    "image": "images/old-town-artisan-market.jpg"
   },
   {
     "name": "Pacific Ridge Innovation Hub",
     "address": "9800 Innovation Way, San Diego, CA 92121",
     "cost": "Access by appointment or event registration; some coworking fees apply.",
-    "description": "A collaborative space for startups and tech entrepreneurs driving San Diego's innovation economy.",
-    "image": "images/pacific-ridge-hub.webp"
+    "description": "A collaborative space for startups and tech entrepreneurs driving innovation",
+    "image": "images/pacific-ridge-innovation-hub.jpg"
   },
   {
     "name": "Seaport Village Promenade",
     "address": "849 W Harbor Dr, San Diego, CA 92101",
     "cost": "Free to walk; shopping and dining prices vary.",
     "description": "A charming waterfront district with boutique shops, eateries, and live entertainment.",
-    "image": "images/seaport-village.webp"
+    "image": "images/seaport-village-promenade.jpg"
   },
   {
     "name": "Cabrillo Cultural Center",
     "address": "1800 Cabrillo Memorial Dr, San Diego, CA 92106",
     "cost": "$10 per adult; $5 for children and seniors.",
     "description": "A heritage site honoring Juan Rodríguez Cabrillo with exhibits on exploration and native history.",
-    "image": "images/cabrillo-center.webp"
+    "image": "images/cabrillo-cultural-center.jpg"
   }
 ]

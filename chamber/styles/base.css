@@ -41,7 +41,6 @@
   border: 0;
 }
 
-
 header {
     background-color: var(--primary-color);
     color: var(--text-white-color);
@@ -713,7 +712,7 @@ dialog::backdrop {
   cursor: pointer;
   padding: 0.5rem 0.85rem;
   margin: 0.25rem 0.25rem 0rem 0rem;
-  background-color: var(--primary-color);
+  background-color: var(--accent-p-color);
   color: var(--text-white-color);
   border: var(--border3);
   border-radius: var(--border-radius2);

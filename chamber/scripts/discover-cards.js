@@ -1,6 +1,5 @@
 const container = document.getElementById("discover-cards");
 
-// Modal elements
 const modal = document.getElementById("locationModal");
 const closeModal = document.getElementById("closeModal");
 const modalTitle = document.getElementById("modalTitle");
@@ -27,6 +26,9 @@ fetch("data/discover.json")
       img.height = 200;
       figure.appendChild(img);
 
+      const content = document.createElement("div");
+      content.className = "card-content";
+
       const address = document.createElement("address");
       address.textContent = item.address;
 
@@ -43,7 +45,8 @@ fetch("data/discover.json")
         modal.showModal();
       });
 
-      card.append(title, figure, address, desc, button);
+      content.append(address, desc, button);
+      card.append(title, figure, content);
       container.appendChild(card);
     });
   });
