@@ -43,6 +43,9 @@
   border: 0;
 }
 
+.rrg-title span {
+  font-family: var(--heading-font);
+}
 
 header {
     background-color: var(--primary-color);
