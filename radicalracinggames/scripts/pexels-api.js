@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   const API_KEY = 'fNLskuMXR3cF3XEzGIn6SUD62nmbAWRh14lqEeXwzOybg3XyyRp8CobU';
-  const query = 'racing game';
+  const query = 'mario kart';
 
   fetch(`https://api.pexels.com/v1/search?query=${encodeURIComponent(query)}&per_page=1`, {
     headers: {
