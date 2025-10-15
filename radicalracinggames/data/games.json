@@ -4,21 +4,21 @@
     "platforms": "PC, Nintendo Switch, Nintendo Switch 2, Xbox One, Xbox Series S, Xbox Series X, PlayStation 4, PlayStation 5",
     "cost": "$69.99",
     "description": "A fast-paced, action-packed racing game featuring Sonic and friends.",
-    "image": "images/game-images/sonic-racing.webp"
+    "image": "images/game-images/sonic-racing-crossworlds.webp"
   },
   {
     "name": "Mario Kart World",
     "platforms": "Nintendo Switch 2",
     "cost": "$79.99",
     "description": "A fun and competitive open-world kart racing game featuring Mario and friends.",
-    "image": "images/game-images/mario-kart.webp"
+    "image": "images/game-images/mario-kart-world.webp"
   },
   {
     "name": "Trackmania",
     "platforms": "PC, Xbox One, Xbox Series X | S, PlayStation 4, PlayStation 5, Luna",
     "cost": "Free",
     "description": "A high-speed racing game with a focus on time trials and stunts.",
-    "image": "images/game-images/trackmania.webp"
+    "image": "images/game-images/trackmania.jpg"
   },
   {
     "name": "Rocket League",
@@ -32,7 +32,7 @@
     "platforms": "PC, PlayStation 4, Xbox One, Nintendo Switch",
     "cost": "$19.99",
     "description": "An open-world arcade racer with high-speed stunts and explosive crashes in Paradise City.",
-    "image": "images/game-images/burnout-paradise.webp"
+    "image": "images/game-images/burnout-paradise-remastered.webp"
   },
   {
     "name": "F1 24",
@@ -88,20 +88,20 @@
     "platforms": "Nintendo Switch",
     "cost": "$59.99",
     "description": "A definitive kart racing experience with classic tracks, characters, and chaotic multiplayer fun.",
-    "image": "images/game-images/mario-kart-8.webp"
+    "image": "images/game-images/mario-kart-8-deluxe.webp"
   },
   {
     "name": "Need for Speed Unbound",
     "platforms": "PC, PlayStation 5, Xbox Series X | S, Amazon Luna",
     "cost": "$59.99",
     "description": "A stylish street racing game with cel-shaded visuals, cop chases, and deep car customization.",
-    "image": "images/game-images/nfs-unbound.webp"
+    "image": "images/game-images/need-for-speed-unbound.webp"
   },
   {
     "name": "The Crew Motorfest",
     "platforms": "PC, PlayStation 4, PlayStation 5, Xbox One, Xbox Series X | S, Amazon Luna",
     "cost": "$69.99",
     "description": "An open-world racing festival set in Hawaii, featuring diverse vehicles and multiplayer events.",
-    "image": "images/game-images/crew-motorfest.webp"
+    "image": "images/game-images/the-crew-motorfest.jpg"
   }
 ]

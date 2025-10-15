@@ -273,7 +273,7 @@ main section h2 {
     background-color: var(--accent-p-color);
     color: var(--text-white-color);
     padding: 0.5rem;
-    padding-left: 0.5rem;
+    margin-bottom: 0.5rem;
     text-align: center;
 }
 main section p {
@@ -296,42 +296,29 @@ main section img {
 #company-cards-section {
     margin: 0;
     margin-top: 1rem;
-    padding: 0.5rem;
+    padding: 0rem;
 }
-/* Grid View */
-#cards.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(217px, 1fr));
-  gap: 1rem;
+
+#company-cards-section > h2 {
+  margin-bottom: 0;
 }
 
 /* Individual Card Styling */
 #cards section {
   border: 1px solid #ccc;
   padding: 0rem 0rem 1rem 0rem;
-  border-radius: 0.5rem;
+  border-radius: 0rem;
   background-color: #fafafa;
   margin: 0rem;
 }
+
 #cards section h2 {
   font-size: 1rem;
   margin-bottom: 0.5rem;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
 }
-#cards img {
-  display: block;
-  margin: 0.5rem auto;
-}
-#cards p {
-  margin: 0;
-  padding: 0.2rem 1rem;
-}
-#cards a {
-    text-decoration:none;
-    color: var(--primary-color);
-    margin: 0.5rem 1rem;
-}
+
 
 /* ========================= LIST VIEW ========================= */
 #cards.list {
@@ -841,3 +828,200 @@ dialog::backdrop {
   margin-bottom: 1rem;
 }
 
+/************************** GAME CARD BUTTON **************************/
+
+.games-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.games-header h1 {
+  font-size: 1.75rem;
+  margin: 0;
+}
+
+.platform-filter {
+  width: 100%;
+}
+
+.platform-filter select {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  border: var(--border1);
+  background-color: var(--accent-p-color);
+  color: var(--text-white-color);
+  appearance: none;
+}
+
+
+#platform-select {
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -9999px;
+}
+
+/************************** GAME CARD STYLING **************************/
+
+.game-card {
+  position: relative;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+  cursor: pointer;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.card-title-bar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(8, 8, 8, 0.85);
+  color: white;
+  font-family: var(--heading-font);
+  font-size: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+  z-index: 2;
+}
+
+.fallback-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ddd;
+  color: var(--text-black-color);
+  font-family: var(--heading-font);
+  font-size: 1rem;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  z-index: 1;
+}
+
+/***************************** MODAL STYLING ******************************/
+
+.game-modal {
+  padding: 0;
+  border: none;
+  border-radius: var(--border-radius);
+  background-color: var(--accent-s-color);
+  max-width: 500px;
+  width: 90%;
+  margin: auto;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.game-modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+  padding: 2rem;
+  color: var(--text-white-color);
+}
+
+.modal-content h3 {
+  font-family: var(--heading-font);
+  margin-bottom: 1rem;
+  background-color: var(--accent-p-color);
+  padding: 1rem;
+  border-radius: var(--border-radius-quarter);
+}
+
+.modal-content ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.modal-content li {
+  margin-bottom: 0.75rem;
+}
+
+.close-modal {
+  float: right;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem 0.85rem;
+  margin: 0.25rem 0.25rem 0rem 0rem;
+  color: var(--text-white-color);
+  border: var(--border1);
+  border-radius: var(--border-radius2);
+}
+
+.close-modal:hover {
+  background-color: var(--primary-color);
+}
+
+/**************************** COMMUNITY CARDS *****************************/
+
+#community-cards-section > h2 {
+  margin-bottom: 0 !important;
+  
+}
+
+#community-cards {
+  margin: 0;
+  padding: 0.5rem;
+}
+
+.community-card {
+  background-color: var(--accent-p-color);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 1rem 0.5rem;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.platform-tags {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.join-button {
+  align-self: start;
+  padding: 0.5rem 1rem;
+  background-color: var(--accent-p-color);
+  color: var(--text-white-color);
+  text-decoration: none;
+  border-radius: 0.25rem;
+  border: 1.5px solid #ff3333;
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.card-bg-overlay {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.15;
+  z-index: 0;
+  pointer-events: none;
+  border-radius: var(--border-radius);
+}
