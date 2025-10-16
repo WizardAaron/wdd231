@@ -449,6 +449,43 @@ body.home main {
   transform: scale(1.05);
 }
 
+/**************************** CONTACT US FORM *****************************/
+
+#contact-form h2 {
+  text-align: left;
+}
+
+#contact-form fieldset {
+  border: none;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+#contact-form input:not([type="checkbox"]),
+#contact-form select,
+#contact-form textarea {
+  width: calc(100% - 1rem);
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+#contact-form button {
+  margin: 1.5rem 0rem 0.5rem 0rem;
+  padding: 0.75rem 1.25rem;
+  background-color: var(--primary-color);
+  color: var(--text-white-color);
+  border: var(--border2);
+  border-radius: var(--border-radius-half);
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+#contact-form button:hover {
+  border: 1.5px solid #ff3333; 
+  color: var(--text-red-color);
+  transform: scale(1.05);
+}
+
 }
 
 @media only screen and (min-width: 1048px) {

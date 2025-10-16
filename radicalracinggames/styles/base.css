@@ -13,6 +13,10 @@
     --border2: 1.5px solid #ffffff;
     --border3: 1px solid #ffffff;
     --border4: 1.5px solid #ffffff;
+    --border5: 1px solid #000000;
+    --border6: 1.5px solid #000000;
+    --border7: 1px solid #ff3333;
+    --border8: 1.5px solid #ff3333;
     --border-radius-quarter: 0.25rem;
     --border-radius-half: 0.5rem;
 	  --border-radius: 1rem;
@@ -1024,4 +1028,120 @@ dialog::backdrop {
   z-index: 0;
   pointer-events: none;
   border-radius: var(--border-radius);
+}
+
+/**************************** CONTACT US FORM *****************************/
+
+#contact-form {
+  max-width: 600px;
+  margin: 2rem auto;
+  background-color: var(--accent-p-color);
+  border-radius: var(--border-radius);
+  border: var(--border2);
+}
+
+#contact-form fieldset {
+  border: none;
+  padding: 2rem 1rem 1rem 1rem;
+}
+
+#contact-form h2 {
+  font-family: var(--heading-font);
+  background-color: var(--accent-p-color);
+  color: var(--text-white-color);
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 0.5rem;
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+  border-bottom: var(--border2);
+  margin-bottom: 0rem;
+}
+
+.purpose-group #purpose {
+  color: var(--text-black-color);
+}
+
+.purpose-group #purpose option {
+  color: var(--text-black-color);
+  border-bottom: var(--border5);
+}
+
+#contact-form label {
+  display: block;
+  margin-top: 1rem;
+}
+
+#contact-form input:not([type="checkbox"]),
+#contact-form select,
+#contact-form textarea {
+  width: calc(100% - 0rem);
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+.checkbox-group {
+  display: grid;
+  grid-template-columns: 1.25rem auto;
+  align-items: start;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  width: 100%;
+}
+
+#nickname,
+#email,
+#message {
+  color: var(--text-black-color);
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: 1rem;
+  height: 1rem;
+  margin: 1.1rem 0 0 0.1rem;
+}
+
+.checkbox-group label {
+  margin: 0;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+#contact-form button {
+  display: block;
+  margin: 1.75rem auto 1rem auto;
+  padding: 0.5rem 1rem;
+  background-color: var(--primary-color);
+  color: var(--text-white-color);
+  border: var(--border2);
+  border-radius: var(--border-radius2);
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+
+.form-wrapper {
+  position: relative;
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+#contact-form {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  z-index: 1;
+}
+
+#contact-form::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.15;
+  z-index: 0;
+  pointer-events: none;
 }
