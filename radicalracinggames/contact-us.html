@@ -51,7 +51,7 @@
   <main>
     <h1>Contact Us</h1>
     <div class="form-wrapper">
-    <form id="contact-form" method="post" action="#">
+    <form id="contact-form" method="POST" action="https://formsubmit.co/radicalracing.contactus@gmail.com">
         <h2>Send Us a Message</h2>
       <fieldset>
         <p>We value your feedback! Please use the form below to send us your suggestions, report issues, or share any other comments you may have. We look forward to hearing from you!</p>
@@ -79,6 +79,11 @@
           <input type="checkbox" id="reply-ok" name="reply-ok">
           <label for="reply-ok">I consent to being contacted via email regarding my message.</label>
         </div>
+
+        <!-- FormSubmit hidden fields -->
+        <input type="hidden" name="_subject" value="New Contact Form Submission">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
 
         <button type="submit">Submit Message</button>
       </fieldset>

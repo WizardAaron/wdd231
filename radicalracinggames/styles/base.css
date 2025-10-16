@@ -1128,9 +1128,6 @@ dialog::backdrop {
 
 #contact-form {
   position: relative;
-  background-color: rgba(0, 0, 0, 0.75);
-  border-radius: var(--border-radius);
-  overflow: hidden;
   z-index: 1;
 }
 
@@ -1144,4 +1141,15 @@ dialog::backdrop {
   opacity: 0.15;
   z-index: 0;
   pointer-events: none;
+}
+
+#contact-form h2,
+#contact-form button {
+  position: relative;
+  z-index: 2;
+}
+
+.form-content {
+  position: relative;
+  z-index: 1;
 }
