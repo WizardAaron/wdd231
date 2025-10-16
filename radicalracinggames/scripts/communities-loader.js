@@ -1,48 +1,48 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const container = document.getElementById("community-cards");
+// load-communities.js
+export async function loadCommunityCards(containerId = "community-cards", jsonPath = "data/communities.json") {
+  try {
+    const container = document.getElementById(containerId);
+    if (!container) throw new Error(`Container #${containerId} not found`);
 
-  fetch("data/communities.json")
-    .then((response) => response.json())
-    .then((communities) => {
-      communities.forEach((community) => {
-        const card = document.createElement("section");
-        card.className = "community-card";
+    const response = await fetch(jsonPath);
+    const communities = await response.json();
 
-        // Background overlay
-        const bgOverlay = document.createElement("div");
-        bgOverlay.className = "card-bg-overlay";
-        bgOverlay.style.backgroundImage = `url(${community.background})`;
-        card.appendChild(bgOverlay);
+    communities.forEach((community) => {
+      const card = document.createElement("section");
+      card.className = "community-card";
 
-        // Content container
-        const content = document.createElement("div");
-        content.className = "card-content";
+      const bgOverlay = document.createElement("div");
+      bgOverlay.className = "card-bg-overlay";
+      bgOverlay.style.backgroundImage = `url(${community.background})`;
+      card.appendChild(bgOverlay);
 
-        const title = document.createElement("h3");
-        title.textContent = community.name;
+      const content = document.createElement("div");
+      content.className = "card-content";
 
-        const description = document.createElement("p");
-        description.textContent = community.description;
+      const title = document.createElement("h3");
+      title.textContent = community.name;
 
-        const platforms = document.createElement("p");
-        platforms.className = "platform-tags";
-        platforms.textContent = `Platform: ${community.platforms.join(", ")}`;
+      const description = document.createElement("p");
+      description.textContent = community.description;
 
-        const link = document.createElement("a");
-        link.href = community.link;
-        link.target = "_blank";
-        link.className = "join-button";
-        link.textContent = "Join Community";
+      const platforms = document.createElement("p");
+      platforms.className = "platform-tags";
+      platforms.textContent = `Platform: ${community.platforms.join(", ")}`;
 
-        content.appendChild(title);
-        content.appendChild(description);
-        content.appendChild(platforms);
-        content.appendChild(link);
-        card.appendChild(content);
-        container.appendChild(card);
-      });
-    })
-    .catch((err) => {
-      console.error("Failed to load communities:", err);
+      const link = document.createElement("a");
+      link.href = community.link;
+      link.target = "_blank";
+      link.className = "join-button";
+      link.textContent = "Join Community";
+
+      content.appendChild(title);
+      content.appendChild(description);
+      content.appendChild(platforms);
+      content.appendChild(link);
+      card.appendChild(content);
+      container.appendChild(card);
     });
-});
+  } catch (err) {
+    console.error("Failed to load communities:", err);
+  }
+}

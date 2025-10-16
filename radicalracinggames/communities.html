@@ -21,8 +21,7 @@
 
   <!-- Scripts -->
   <script src="scripts/date.js" defer></script>
-  <script src="scripts/navigation.js" defer></script>
-  <script src="scripts/communities-loader.js" defer></script>
+  <script src="scripts/navigation.js" defer></script>  
 
   <!-- Fonts -->
   <!--<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -60,8 +59,8 @@
     <div class="footer-left">
       <p>Radical Racing Games</p>
       <a href="attributions.html">Attributions</a>
-      <p>rrgreal@radicalracinggames.org</p>
-      <p>(000) 123-4567</p>
+      <p>radicalracing.contactus@gmail.com</p>
+      <a href="https://youtu.be/ycUzzifQkX0">Javascript Video</a>
     </div>
 
     <div class="footer-center">
@@ -79,5 +78,12 @@
       <p id="lastModified">Last Modification: <span id="short"></span></p>
     </div>
   </footer>
+  <script type="module">
+  import { loadCommunityCards } from './scripts/communities-loader.js';
+  document.addEventListener('DOMContentLoaded', () => {
+    loadCommunityCards();
+  });
+</script>
+
 </body>
 </html>
